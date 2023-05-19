@@ -110,6 +110,8 @@ GEM
       racc (~> 1.4)
     puma (5.6.5)
       nio4r (~> 2.0)
+    rabl (0.14.5)
+      activesupport (>= 2.3.14)
     racc (1.6.2)
     rack (2.2.7)
     rack-test (2.1.0)
@@ -160,6 +162,7 @@ DEPENDENCIES
   bootsnap
   debug
   puma (~> 5.0)
+  rabl (~> 0.14.0)
   rails (~> 7.0.4, >= 7.0.4.3)
   sqlite3 (~> 1.4)
   tzinfo-data
