@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  namespace :api do
+    namespace :v1 do
+      root 'rankings#by_month_year'
+      get 'ranking/actual', to: 'rankings#current'
+      get 'ranking/:year/:month', to: 'rankings#by_month_year'
+      post 'ranking/record', to: 'rankings#record'
+    end
+  end
 end
