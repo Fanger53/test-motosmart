@@ -7,8 +7,6 @@ this is an Api for the test of motosmart
 - Ruby
 - Ruby on Rails
 - Ruby gem bundler
-- Scss
-- Bulma
 - Linters
 - VS code
 
@@ -55,7 +53,7 @@ To get a local copy up and running follow these simple steps:
 you can test the aplication introduccing data with the console of rails and you can see the data with the next commands
 curl -X GET http://localhost:3000/api/v1/ranking/actual
 curl -X GET http://localhost:3000/api/v1/ranking/2023/05
-curl -X POST -H "Content-Type: application/json" -d '{ "user_id": 1, "kilometers": 100 }' http://localhost
+ curl -X POST -H "Content-Type: application/json" -d '{"kilometers": 900}' http://localhost:3000/api/v1/ranking/record?user_id=user_id
 
 ## 👥 Author
 
